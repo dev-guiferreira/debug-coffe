@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug Coffe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="icon" href="/img/logo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <section>
+            <a href="#" class="logo">
+                <img src="/img/logo.png" alt="DebugCoffe-Logo">
+            </a>
+
+            <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#about">Sobre</a>
+                <a href="#menu">Menu</a>
+                <a href="#review">Avaliações</a>
+                <a href="#address">Endereço</a>
+            </nav>
+
+            <div class="icons">
+                <img width="20" height="20" src="https://img.icons8.com/ios/30/ffffff/search--v1.png" alt="search--v1"/>
+                <img width="20" height="20" src="https://img.icons8.com/ios/30/ffffff/shopping-cart--v1.png" alt="shopping-cart--v1" id="cart-panel"/>
+            </div>
+        </section>
+    </header>
+
+    <div class="home-container">
+        <section id="home">
+            <div class="content">
+                <h3>CODE COM O MELHOR CAFÉ DA REGIÃO</h3>
+                <P>Experimente o sabor que desperta ideias e transforma manhãs em maratonas de criatividade.
+                Café selecionado, aroma intenso e qualidade de quem entende de performance — no código e na xícara.</P>
+                <a href="#" class="btn">Pegue o seu agora</a>
+            </div>
+        </section>
+    </div>
+
+    <section class="about" id="about">
+        <h2 class="title">SOBRE <span> NÓS </span></h2>
+        <div class="row">
+            <div class="conteiner-img">
+                <img src="/img/about-img.jpg" alt="sobre nós">
+            </div>
+            <div class="content">
+                <h3>O que faz o nosso café especial?</h3>
+                <p>A Debug Coffe nasceu da união entre a paixão por tecnologia e o amor por café. 
+                    Criamos um espaço onde programadores e estudantes podem trabalhar, estudar e trocar 
+                    ideias com energia e estilo.
+                </p>
+                <p>
+                    Acreditamos que boas ideias surgem entre um código e outro gole de café. Por isso, 
+                    oferecemos um ambiente moderno, com internet rápida, eventos tech e o melhor café 
+                    artesanal da cidade.
+                </p>
+
+                 <a href="#" class="btn">Saiba Mais</a>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+        <h2 class="title">Nosso <span>Menu</span></h2>
+
+       <div class="box-container">
+            <div class="box">
+                <img src="/img/java.png" alt="item-1">
+                <h3>Java Latte</h3>
+                <div class="price">R$ 15,99 <span>R$ 25,00</span></div>
+
+                <!-- adicionando sistema de carrinho -->
+                <a href="#" class="btn add-to-cart" data-name="Java Latte" data-price="15.99">Adicione ao Carrinho</a>
+            </div>
+
+            <div class="box">
+                <img src="/img/py.png" alt="item-2">
+                <h3>Python Mocha</h3>
+                <div class="price">R$ 10,90 <span>R$ 15,00</span></div>
+
+                <a href="#" class="btn add-to-cart" data-name="Python Mocha" data-price="10.90">Adicione ao Carrinho</a>
+            </div>
+
+            <div class="box">
+                <img src="/img/debug.png" alt="item-3">
+                <h3>Bugspresso</h3>
+                <div class="price">R$ 5,99 <span>R$ 10,00</span></div>
+
+                <a href="#" class="btn add-to-cart" data-name="Bugspresso" data-price="5.99">Adicione ao Carrinho</a>
+            </div>
+
+            <div class="box">
+                <img src="/img/comida1-removebg-preview.png" alt="item-4">
+                <h3>SQL Query Bowl</h3>
+                <div class="price">R$ 35,00 <span>R$ 50,00</span></div>
+
+                <a href="#" class="btn add-to-cart" data-name="SQL Query Bowl" data-price="35.00">Adicione ao Carrinho</a>
+            </div>
+
+            <div class="box">
+                <img src="/img/comida2-removebg-preview.png" alt="item-5">
+                <h3>Pythonic Pyramid</h3>
+                <div class="price">R$ 24,99 <span>R$ 30,00</span></div>
+
+                <a href="#" class="btn add-to-cart" data-name="Pythonic Pyramid" data-price="24.99">Adicione ao Carrinho</a>
+            </div>
+
+            <div class="box">
+                <img src="/img/comida3-removebg-preview (1).png" alt="item-6">
+                <h3>JavaScript Event Loop Wraps</h3>
+                <div class="price">R$ 59,99 <span>R$ 70,00</span></div>
+
+                <a href="#" class="btn add-to-cart" data-name="JS Event Loop Wraps" data-price="59.99">Adicione ao Carrinho</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="review" id="review">
+      <h2 class="title">Nossos <span>Clientes</span></h2>
+
+      <div class="box-container">
+        <div class="box">
+            <img src="/img/quote-img.png" alt="comentário">
+            <p>Mano… esse café da Debug Coffe é tipo meter uma bola de 3 no último segundo: perfeito! 
+                Energia pura, sabor intenso e zero bug no meu dia. Se eu tivesse isso nos intervalos dos jogos, 
+                já tinha batido recorde até no modo treino!</p>
+            <img src="/img/curry.jpg" alt="Curry-Cliente" width="200" height="200px" class="user">
+            <h3>Stephen Curry</h3>
+            <div class="star">
+                <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star.png" alt="star"/>
+                <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star.png" alt="star"/>
+                <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star.png" alt="star"/>
+                <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star.png" alt="star"/>
+                <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star.png" alt="star"/>
+            </div>
+        </div>
+        <div class="box">
+            <img src="/img/quote-img.png" alt="comentário">
+            <p>Olha só, pessoal… estive tomando aqui o tal do Debug Coffe, um café patriota, sem frescura! Forte, honesto e trabalhador, 
+                igual ao brasileiro raiz! E digo mais: com esse café, o Brasil não seria bugado nunca mais!</p>
+            <img src="/img/bolsonaro_tomando_café.jpg" alt="Jair Messias Bolsonaro"   width="200" height="200px"class="user">
+            <h3>Jair Messias Bolsonaro</h3>
+            <div class="star">
+                <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star.png" alt="star"/>
+                <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star.png" alt="star"/>
+                <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star.png" alt="star"/>
+                <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star.png" alt="star"/>
+                <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star-half-empty.png" alt="star-half-empty"/>
+            </div>
+        </div>
+        <div class="box">
+            <img src="/img/quote-img.png" alt="comentário">
+            <p>Tomei uma xícara de Debug Coffe e, sem brincadeira, meu código começou a se compilar sozinho. Senti a cafeína invadindo minha alma e 
+                expulsando os bugs do meu VS Code. É tipo feitiçaria… mas com gosto de café premium!</p>
+            <img src="/img/tommy jado.jpg" alt="Tommy Jado" width="200" height="200px" class="user">
+            <h3>Tommy Jado</h3>
+            <div class="star">
+                <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star.png" alt="star"/>
+                <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star.png" alt="star"/>
+                <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star.png" alt="star"/>
+                <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star.png" alt="star"/>
+                
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="address" id="address">
+        <h2 class="title">Nosso <span>Endereço</span></h2>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1760510331891!6m8!1m7!1snkWNdpqul2uQa8wM6fJF7Q!2m2!1d-21.18157943991404!2d-50.45041844371848!3f144.4388671599047!4f3.0963157849940046!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="footer">
+        <div class="share">
+            <a href="https://www.instagram.com/gui_2k7/" class="instagram">
+            <img width="48" height="48" src="https://img.icons8.com/color/48/ffffff/instagram-new--v1.png" alt="instagram-new--v1" class="instagram"/>
+            </a>
+            <a href="https://github.com/c0mum" class="github">
+            <img width="50" height="48" src="https://img.icons8.com/ios-filled/48/ffffff/github.png" alt="github" class="github"/>
+            </a>
+            <a href="https://discord.com/channels/@me"class="discord">
+            <img width="48" height="48" src="https://img.icons8.com/color/48/ffffff/discord-logo.png" alt="discord-logo" class="discord"/>
+            </a>
+        </div>
+    </section>
+
+        <div class="contact-form">
+            <form action="contato.html">
+                
+                <h2>Entre em Contato</h2>
+
+                <div class="input-group">
+                    <input type="text" id="nome" placeholder=" " required>
+                    <label for="nome">Seu Nome</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="email" id="email" placeholder=" " required>
+                    <label for="email">Seu Email</label>
+                </div>
+
+                <div class="input-group">
+                    <textarea id="mensagem" placeholder=" " required></textarea>
+                    <label for="mensagem">Sua Mensagem</label>
+                </div>
+
+                <button>Enviar</button>
+            </form>
+        </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
